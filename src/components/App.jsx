@@ -4,7 +4,7 @@ import friends from './friends.json';
 import transaction from './transactions.json';
 import renderUserProfile from './Social-network-profile';
 import statistic from './Statistic-section';
-import friendsList from './Friend-list';
+import FriendsList from './Friend-list';
 import transactionRender from './Transaction-History';
 
 export const App = () => {
@@ -12,7 +12,11 @@ export const App = () => {
     <>
       <div className="prof">
         {renderUserProfile(user)}
-        <div className="frien">{friendsList(friends)}</div>
+        <div className="frien">
+          {friends.map(friends => {
+            return <FriendsList {...friends} />;
+          })}
+        </div>
       </div>
       <section className="statistics">
         <h2 className="title">Upload stats</h2>
