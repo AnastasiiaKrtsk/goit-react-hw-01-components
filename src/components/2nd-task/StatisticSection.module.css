@@ -1,0 +1,25 @@
+/**statistic**/
+
+.stat-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 12px;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.percentage {
+  color: #007bff;
+}

@@ -1,0 +1,44 @@
+/** friends **/
+
+.avatar {
+  border-radius: 15%;
+  margin: 0 10px 0;
+  display: block;
+  border: 1px solid #c4c4c4;
+}
+.item {
+  display: flex;
+}
+.status-online::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 1px;
+  background-color: green;
+}
+.status-offline::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 1px;
+  background-color: red;
+}
+
+.friend-list {
+  border: 1px solid #ccc;
+}
+.friend-list .item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-style: none;
+}
+
+.friend-list .item:hover {
+  background-color: #f0f0f0;
+}
